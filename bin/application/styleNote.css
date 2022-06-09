@@ -1,0 +1,59 @@
+.button {
+    -fx-border-width: none;
+    -fx-background-radius: 10;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+
+.button:hover {
+	-fx-border-width: none;
+    -fx-background-radius: 10;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+    -fx-background-color:black;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 17;
+
+}
+
+.button:pressed,.button:default:hover:pressed  {
+ 	-fx-border-width: none;
+    -fx-background-radius: 10;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+    -fx-background-color:black;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 17;
+
+}
+
+
+ .body{
+   /* -fx-background-image: url(image1.jpg);*/
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+
+
+
+
+}
+
+.button:focused {
+   -fx-border-width: none;
+    -fx-background-radius: 10;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+    -fx-background-color:black;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 17;
+    -fx-border-insets: 1 1 1 1, 0;
+}
+
+
+.TextField {
+	-fx-padding:  7 22 7 22;
+    -fx-border-width: none;
+    -fx-background-radius: 5;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+    -fx-font-size: 14;
+
+}

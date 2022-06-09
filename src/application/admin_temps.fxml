@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" styleClass="parent" stylesheets="@last%20one.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.admin_tempsController">
+   <left>
+      <Pane maxWidth="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="250.0" style="-fx-background-color: #3e78b2;" styleClass="sidebar" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="65.0" layoutY="7.0" mnemonicParsing="false" onMouseClicked="#borderpane_pressed" onMouseDragged="#borderpane_dragged" style="-fx-background-color: transparent;">
+               <graphic>
+                  <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="15.0" prefWidth="15.0" styleClass="min-btn" />
+               </graphic>
+            </Button>
+            <Button fx:id="minimizeButton" layoutX="36.0" layoutY="7.0" mnemonicParsing="false" onAction="#minimize" onMouseClicked="#min" style="-fx-background-color: transparent;">
+               <graphic>
+                  <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#min" prefHeight="15.0" prefWidth="15.0" styleClass="max-btn" />
+               </graphic>
+            </Button>
+            <Button fx:id="closeButton" layoutX="8.0" layoutY="7.0" mnemonicParsing="false" onAction="#closeButtonAction" prefHeight="30.0" prefWidth="18.0" style="-fx-background-color: transparent;">
+               <graphic>
+                  <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="15.0" prefWidth="15.0" styleClass="close-btn" />
+               </graphic>
+            </Button>
+            <HBox alignment="CENTER_LEFT" layoutX="25.0" layoutY="196.0" prefHeight="40.0" prefWidth="200.0" styleClass="sidebar_btns" stylesheets="@last%20one.css">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <children>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icon/home_FILL1_wght400_GRAD0_opsz48.png" />
+                     </image>
+                  </ImageView>
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#switchToHome" prefHeight="30.0" prefWidth="161.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <Label text="Accueil">
+                           <font>
+                              <Font name="Calibri Bold" size="16.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                     </graphic>
+                  </Button>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </HBox>
+            <HBox fx:id="note" alignment="CENTER_LEFT" layoutX="25.0" layoutY="244.0" prefHeight="40.0" prefWidth="200.0" styleClass="sidebar_btns" stylesheets="@last%20one.css">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <children>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icon/format_list_bulleted_FILL1_wght400_GRAD0_opsz48.png" />
+                     </image>
+                  </ImageView>
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#switchToNote" prefHeight="43.0" prefWidth="166.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <Label text="Tableau des notes">
+                           <font>
+                              <Font name="Calibri Bold" size="16.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                     </graphic>
+                  </Button>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="25.0" layoutY="295.0" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: white;" styleClass="sidebar_btns" stylesheets="@last%20one.css">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <children>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@calendar.png" />
+                     </image>
+                  </ImageView>
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#switchToEmploi" prefHeight="41.0" prefWidth="166.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <Label text="Emploi du temps">
+                           <font>
+                              <Font name="Calibri Bold" size="16.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                     </graphic>
+                  </Button>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="25.0" layoutY="342.0" prefHeight="40.0" prefWidth="200.0" styleClass="sidebar_btns" stylesheets="@last%20one.css">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <children>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icon/supervised_user_circle_FILL1_wght400_GRAD0_opsz48.png" />
+                     </image>
+                  </ImageView>
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#switchToList" prefHeight="47.0" prefWidth="165.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <Label text="Liste des étudiants">
+                           <font>
+                              <Font name="Calibri Bold" size="16.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                     </graphic>
+                  </Button>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="25.0" layoutY="627.0" prefHeight="40.0" prefWidth="200.0" styleClass="sidebar_btns" stylesheets="@last%20one.css">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <children>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@sign-out-option.png" />
+                     </image>
+                  </ImageView>
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#switchToLogin" prefHeight="40.0" prefWidth="165.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <Label text="Déconnexion">
+                           <font>
+                              <Font name="Calibri Bold" size="16.0" />
+                           </font>
+                        </Label>
+                     </graphic>
+                  </Button>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="25.0" layoutY="395.0" prefHeight="40.0" prefWidth="200.0" styleClass="sidebar_btns" stylesheets="@last%20one.css">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <children>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icon/contacts_FILL1_wght400_GRAD0_opsz48.png" />
+                     </image>
+                  </ImageView>
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#switchToProfil" prefHeight="45.0" prefWidth="165.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <Label text="Profil">
+                           <font>
+                              <Font name="Calibri Bold" size="16.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                     </graphic>
+                  </Button>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="25.0" layoutY="444.0" prefHeight="40.0" prefWidth="200.0" styleClass="sidebar_btns" stylesheets="@last%20one.css">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <children>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icon/settings_FILL1_wght400_GRAD0_opsz48.png" />
+                     </image>
+                  </ImageView>
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#switchToParametre" prefHeight="53.0" prefWidth="166.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <Label text="Paramétre">
+                           <font>
+                              <Font name="Calibri Bold" size="16.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                     </graphic>
+                  </Button>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </HBox>
+         </children>
+      </Pane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="950.0">
+               <children>
+                  <Label layoutX="365.0" layoutY="73.0" prefHeight="42.0" prefWidth="220.0" text="Emploi du temps" textAlignment="CENTER">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="11.0" layoutY="21.0" mnemonicParsing="false" onAction="#cancel" prefHeight="25.0" prefWidth="76.0" style="-fx-background-color: o;" />
+                  <TableView fx:id="Table" layoutX="49.0" layoutY="147.0" prefHeight="464.0" prefWidth="852.0" stylesheets="@tableview.css">
+                     <columns>
+                        <TableColumn fx:id="jour" prefWidth="150.0" text="Jour" />
+                        <TableColumn fx:id="_8_10Column" prefWidth="170.0" text="8-10" />
+                        <TableColumn fx:id="_10_12Column" prefWidth="170.0" text="10-12" />
+                        <TableColumn fx:id="_14_16Column" prefWidth="170.0" text="14-16" />
+                        <TableColumn fx:id="_16_18Column" prefWidth="170.0" text="16-18" />
+                     </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

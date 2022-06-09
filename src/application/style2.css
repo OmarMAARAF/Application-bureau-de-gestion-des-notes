@@ -1,0 +1,10 @@
+.body{
+    -fx-background-image: url(image6.jpg);
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position : center;
+    -fx-background-size : 100% 100% ;
+
+
+    
+}

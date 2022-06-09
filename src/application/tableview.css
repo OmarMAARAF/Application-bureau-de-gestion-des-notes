@@ -1,0 +1,131 @@
+.table-view{
+    -fx-background-color:transparent;
+}
+
+.table-view .table-column{
+    -fx-background-color:transparent;
+}
+
+
+.table-view .column-header-background {
+    -fx-background-color:  #3e78b2;
+    -fx-background-radius:3px 3px 0px 0px;
+    -fx-pref-height: 50px;
+}
+
+.table-view .column-header-background .text {
+    -fx-border-color: transparent;
+    -fx-fill:white;
+}
+
+
+.table-view .column-header-background .filler {
+    -fx-background-color:transparent;
+    -fx-opacity: 0;
+}
+.table-view .table-column {
+
+    -fx-border-width: 0px 0px 0px 0px;
+    -fx-border-color: black;
+}
+
+.table-view .table-column :selected {
+
+    -fx-border-width: 0px 0px 0px 0px;
+    -fx-border-color: black;
+}
+
+.table-view .table-column:filled{
+    -fx-background-color: transparent;
+    -fx-background-insets:0,0 0 1 0;
+    -fx-padding: 1.5em;
+
+}
+
+.table-view .scroll-bar:vertical {
+    -fx-opacity: 1;
+}
+
+
+.table-view .table-row-cell{
+    /*-fx-background-color: ;*/
+}
+
+
+.table-view .table-row-cell:even{
+
+    /*-fx-background-color: ;*/
+}
+
+.table-view .table-row-cell:odd:selected,
+.table-view .table-row-cell:even:selected{
+
+    -fx-background-color:#03045E;
+
+}
+
+
+
+
+/*Gestion du scroll bar de la tableview via des commandes de bases*/
+
+.table-view .scroll-bar:vertical{
+    -fx-background-color: transparent;
+    -fx-background-radius:2em;
+    -fx-pref-height:5px;
+}
+
+.table-view.scroll-bar:vertical .track{
+
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-radius:0em;
+    -fx-border-color: 2em;
+}
+
+.table-view .scroll-bar:horizontal .decrement-button{
+
+    -fx-background-color: transparent;
+    -fx-background-radius:0em;
+    -fx-padding: 0 0 1 0;
+}
+
+.table-view .scroll-bar:vertical .decrement-button{
+
+    -fx-background-color: transparent;
+    -fx-background-radius:0em;
+    -fx-padding: 0 7 0 0;
+}
+
+.table-view .scroll-bar .increment-arrow,
+.table-view .scroll-bar .decrement-arrow{
+    -fx-padding: -1px;
+}
+
+.table-view .scroll-bar:vertical .thumb{
+
+    -fx-background-color: derive(black,70%);
+    -fx-background-insets:2.5,0,0;
+    -fx-background-radius:1em;
+
+}
+
+
+.table-view .placeholder .label .text{
+    -fx-fill: transparent;
+}
+
+/*Gestion du snackbar*/
+.jfx-snackbar-content{
+    -fx-background-color:#00aff0;
+}
+.jfx-snackbar-toast{
+    -fx-text-fill:white;
+    -fx-font-size:13px;
+}
+
+/**Actualiser **/
+
+.actualiser:hover{
+    -fx-background-color: #f1f1f1;
+}

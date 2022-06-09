@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" stylesheets="@tableview1.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.emploisController">
+   <children>
+      <TableView fx:id="coursTable" layoutX="109.0" layoutY="163.0" prefHeight="537.0" prefWidth="1200.0" stylesheets="@tableview1.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="163.0">
+        <columns>
+            <TableColumn fx:id="joursColumn" prefWidth="240.0" text="jours" />
+          <TableColumn fx:id="firstColumn" prefWidth="240.0" text="8-10" />
+          <TableColumn fx:id="secondColumn" prefWidth="240.0" style="-fx-border-color: #059EFF;" text="10-12" />
+            <TableColumn fx:id="thirdColumn" prefWidth="240.0" style="-fx-border-color: #059EFF;" text="14-16" />
+            <TableColumn fx:id="forthColumn" prefWidth="240.0" text="16-18" />
+        </columns>
+      </TableView>
+      <HBox layoutX="27.0" layoutY="-19.0" prefHeight="163.0" prefWidth="1200.0" styleClass="emploisTitle" stylesheets="@tableview1.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox prefHeight="163.0" prefWidth="541.0">
+               <children>
+                  <HBox prefHeight="138.0" prefWidth="504.0" styleClass="emploisTitle" stylesheets="@tableview1.css">
+                     <children>
+                        <AnchorPane prefHeight="539.0" prefWidth="446.0">
+                           <children>
+                              <Button layoutX="27.0" layoutY="62.0" mnemonicParsing="false" onAction="#retourBtn" prefHeight="40.0" prefWidth="147.0" style="-fx-background-color: #3e78b2; -fx-background-radius: 20px;" styleClass="button2" stylesheets="@../../bin/CSS/fullpackstyling.css" text="Retour" textFill="WHITE">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Button>
+                              <ImageView fitHeight="20.0" fitWidth="27.0" layoutX="37.0" layoutY="72.0">
+                                 <image>
+                                    <Image url="@back_button.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                     </children></HBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="47.0" prefWidth="461.0">
+               <children>
+                  <Label prefHeight="163.0" prefWidth="506.0" styleClass="emploisTitle" stylesheets="@tableview.css" text="EMPLOI DU TEMPS">
+                     <effect>
+                        <Glow level="0.0" />
+                     </effect>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

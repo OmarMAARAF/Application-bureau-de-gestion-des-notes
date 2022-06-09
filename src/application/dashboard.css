@@ -1,0 +1,4 @@
+.date1
+{
+	-fx-effect: dropshadow(gaussian , rgba(0,0,0,0.8), 5, 0, 0, 0);
+}

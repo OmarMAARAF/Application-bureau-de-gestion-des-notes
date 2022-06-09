@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginController">
+   <children>
+      <SplitPane dividerPositions="0.5" layoutX="58.0" layoutY="70.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="160.0" prefWidth="200.0" stylesheets="@blue.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="298.0" prefWidth="208.0" style="-fx-background-color: #cde5f1;" styleClass="body">
+               <children>
+                  <Button layoutX="75.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#borderpane_pressed" onMouseDragged="#borderpane_dragged" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="15.0" prefWidth="15.0" styleClass="min-btn" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="minimizeButton" layoutX="48.0" layoutY="14.0" mnemonicParsing="false" onAction="#minimize" onMouseClicked="#min" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#min" prefHeight="15.0" prefWidth="15.0" styleClass="max-btn" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="closeButton" layoutX="22.0" layoutY="14.0" mnemonicParsing="false" onAction="#closeButtonAction" prefHeight="30.0" prefWidth="18.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="15.0" prefWidth="15.0" styleClass="close-btn" />
+                     </graphic>
+                  </Button>
+               </children>
+               <stylesheets>
+                  <URL value="@blue.css" />
+                  <URL value="@last%20one.css" />
+               </stylesheets></AnchorPane>
+            <SplitPane dividerPositions="0.08" orientation="VERTICAL" prefHeight="598.0" prefWidth="0.0">
+              <items>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #cde5f1;" />
+                  <AnchorPane minHeight="0.0" minWidth="0.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="337.0" prefWidth="599.0" style="-fx-background-color: #cde5f1;" styleClass="split-pane">
+                     <children>
+                        <Label layoutX="72.0" layoutY="166.0" text="Connexion">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <AnchorPane layoutX="73.0" layoutY="199.0" prefHeight="5.0" prefWidth="31.0" style="-fx-background-color: #03c3fb; -fx-background-radius: 0px 15px 15px 0px;" />
+                        <Label layoutX="74.0" layoutY="242.0" text="Identifiant">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="73.0" layoutY="313.0" text="Mot de passe">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <PasswordField fx:id="password" layoutX="219.0" layoutY="308.0" prefHeight="41.0" prefWidth="295.0" promptText="Mot de passe" style="-fx-background-color: transparent; -fx-border-color: #03c3fb; -fx-border-width: 0px 0px 2px 0px;" AnchorPane.leftAnchor="219.0" AnchorPane.rightAnchor="85.0" AnchorPane.topAnchor="308.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </PasswordField>
+                        <TextField fx:id="username" layoutX="219.0" layoutY="237.0" prefHeight="41.0" prefWidth="295.0" promptText="Identifiant" style="-fx-background-color: transparent; -fx-border-color: #03c3fb; -fx-border-width: 0px 0px 2px 0px;" AnchorPane.leftAnchor="219.0" AnchorPane.rightAnchor="85.0" AnchorPane.topAnchor="237.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextField>
+                        <Button layoutX="73.0" layoutY="386.0" mnemonicParsing="false" onAction="#loginAction" prefHeight="56.0" prefWidth="455.0" style="-fx-background-color: #03c3fb; -fx-background-radius: 15px;" styleClass="login" stylesheets="@blue.css" text="Connexion" AnchorPane.leftAnchor="73.0" AnchorPane.rightAnchor="71.0" AnchorPane.topAnchor="386.0">
+                           <font>
+                              <Font name="Arial" size="19.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                     <stylesheets>
+                        <URL value="@application.css" />
+                        <URL value="@blue.css" />
+                     </stylesheets>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,30 @@
+
+.body{
+
+
+	-fx-background-image:url(p2.png);
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: center;
+	-fx-background-size:100% 100%;
+	-fx-background-size: contain;
+}
+.split-pane *.split-pane-divider {
+	 -fx-padding: 0 0 0 0;
+}
+
+.login{
+}
+.login:hover{
+	-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), -5, 0, 0, 0);
+}
+.filliere{
+	-fx-background-color:#9474d7;
+	-fx-background-radius :20px;
+	-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 5, 0, 0, 0);
+	}
+.filliere:hover{
+	-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+}
+.adminpage{
+   -fx-background-color: linear-gradient(to top left, #ebdbe8, #c99ad4);
+}

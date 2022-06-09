@@ -1,0 +1,7 @@
+.split-pane *.split-pane-divider {
+	 -fx-padding: 0 0 0 0;
+}
+.tous:hover{
+	-fx-border-width: 0px 0px 3px 0px;
+	-fx-border-color: #61e9fb;
+}

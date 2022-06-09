@@ -1,0 +1,48 @@
+.parent{
+	-fx-background-color : #FDFDFE;
+
+}
+.sidebar{
+	-fx-background-color : #397DEF;
+	}
+
+.close-btn{
+	-fx-background-color : #FF6058;
+	-fx-background-radius : 100%;
+}
+.close-btn:hover{
+	-fx-background-color : red;
+	-fx-background-radius : 100%;
+}
+.min-btn{
+	-fx-background-color : #27CA41;
+	-fx-background-radius : 100%;
+}
+.min-btn:hover{
+	-fx-background-color : green;
+	-fx-background-radius : 100%;
+}
+.max-btn{
+	-fx-background-color : #FFBD2D;
+	-fx-background-radius : 100%;
+}
+.max-btn:hover{
+	-fx-background-color : yellow;
+	-fx-background-radius : 100%;
+}
+
+.sidebar_btns{
+	-fx-background-color : transparent;
+	-fx-background-radius : 5px;
+	}
+.sidebar_btns:hover{
+	-fx-background-color : #FDFDFE;
+	-fx-background-radius : 5px;
+	}
+	fillierebtn:hover{
+		-fx-background-color : yellow;
+		-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), -5, 0, 0, 0);
+	}
+	.split-pane *.split-pane-divider {
+	 -fx-padding: 0 0 0 0;
+}

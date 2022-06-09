@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.EditeController">
+   <children>
+      <Label layoutX="111.0" layoutY="51.0" prefHeight="40.0" prefWidth="346.0" text="      Changer le mot de passe" textAlignment="CENTER" textFill="#000000d6">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="oldPasswordField" layoutX="30.0" layoutY="151.0" prefHeight="35.0" prefWidth="508.0" promptText="mot de passe actuel" />
+      <PasswordField fx:id="newPasswordField" layoutX="30.0" layoutY="230.0" prefHeight="35.0" prefWidth="508.0" promptText="le nouveau mot de passe" />
+      <PasswordField fx:id="confirmPasswordField" layoutX="29.0" layoutY="310.0" prefHeight="35.0" prefWidth="508.0" promptText="Confirmez le nouveau mot de passe" AnchorPane.leftAnchor="29.0" />
+      <ButtonBar layoutX="374.0" layoutY="381.0" prefHeight="40.0" prefWidth="200.0" />
+      <Button layoutX="431.0" layoutY="391.0" mnemonicParsing="false" onAction="#SaveButton" prefHeight="31.0" prefWidth="106.0" style="-fx-background-color: #3e78b2;" text="Enregistrer" textFill="#fdfeff">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="574.0" layoutY="631.0" mnemonicParsing="false" onAction="#cancelButton" prefHeight="40.0" prefWidth="147.0" style="-fx-background-color: #3e78b2; -fx-background-radius: 20px;" styleClass="button2" stylesheets="@../../bin/CSS/fullpackstyling.css" text="Retour" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="20.0" fitWidth="27.0" layoutX="587.0" layoutY="641.0">
+         <image>
+            <Image url="@back_button.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="250.0" fitWidth="273.0" layoutX="801.0" layoutY="151.0">
+         <image>
+            <Image url="@imagesett.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
