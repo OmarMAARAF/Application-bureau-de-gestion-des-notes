@@ -1,0 +1,75 @@
+
+
+Version:	3.14
+CmdLine:	C:\Users\Dell\Desktop\bay bay\Najah\Najah.exe --l4j-debug
+WOW64:		yes
+Working dir:	C:\Users\Dell\Desktop\bay bay\Najah\.
+Java min ver:	1.008.000_360
+Java max ver:	
+64-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.6
+Ignore:		1.006.000
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.6.0_39
+Ignore:		1.006.000_039
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.8
+Ignore:		1.008.000
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.8.0_301
+Ignore:		1.008.000_301
+32-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+64-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+Check:		SOFTWARE\JavaSoft\Java Development Kit\1.8
+Ignore:		1.008.000
+Check:		SOFTWARE\JavaSoft\Java Development Kit\1.8.0_301
+Ignore:		1.008.000_301
+32-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+64-bit search:	SOFTWARE\JavaSoft\JRE...
+32-bit search:	SOFTWARE\JavaSoft\JRE...
+64-bit search:	SOFTWARE\JavaSoft\JDK...
+Check:		SOFTWARE\JavaSoft\JDK\16.0.2
+Check launcher:	C:\Program Files\Java\jdk-16.0.2\bin\javaw.exe (not found)
+Ignore:		1.016.000_002
+32-bit search:	SOFTWARE\JavaSoft\JDK...
+64-bit search:	SOFTWARE\IBM\Java Runtime Environment...
+32-bit search:	SOFTWARE\IBM\Java Runtime Environment...
+64-bit search:	SOFTWARE\IBM\Java Development Kit...
+32-bit search:	SOFTWARE\IBM\Java Development Kit...
+64-bit search:	SOFTWARE\IBM\Java2 Runtime Environment...
+32-bit search:	SOFTWARE\IBM\Java2 Runtime Environment...
+64-bit search:	SOFTWARE\IBM\Java Development Kit...
+32-bit search:	SOFTWARE\IBM\Java Development Kit...
+Error msg:	This application requires a Java Runtime Environment 1.8.0_360
+The registry refers to a nonexistent Java Runtime Environment installation or the runtime is corrupted.
+Open URL:	http://java.com/download
+
+
+Version:	3.14
+CmdLine:	C:\Users\Dell\Desktop\bay bay\Najah\Najah.exe --l4j-debug
+WOW64:		yes
+Working dir:	C:\Users\Dell\Desktop\bay bay\Najah\.
+Java min ver:	1.008.000_301
+Java max ver:	
+64-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.6
+Ignore:		1.006.000
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.6.0_39
+Ignore:		1.006.000_039
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.8
+Ignore:		1.008.000
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.8.0_301
+Check launcher:	C:\Program Files\Java\jre1.8.0_301\bin\javaw.exe (OK)
+Match:		1.008.000_301
+64-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+Check:		SOFTWARE\JavaSoft\Java Development Kit\1.8
+Ignore:		1.008.000
+Check:		SOFTWARE\JavaSoft\Java Development Kit\1.8.0_301
+Ignore:		1.008.000_301
+64-bit search:	SOFTWARE\JavaSoft\JRE...
+64-bit search:	SOFTWARE\JavaSoft\JDK...
+Check:		SOFTWARE\JavaSoft\JDK\16.0.2
+Check launcher:	C:\Program Files\Java\jdk-16.0.2\bin\javaw.exe (not found)
+Ignore:		1.016.000_002
+Runtime used:	1.008.000_301 (64-bit)
+Launcher:	C:\Program Files\Java\jre1.8.0_301\bin\javaw.exe
+Launcher args:	-jar "C:\Users\Dell\Desktop\bay bay\Najah\Najah.exe"
+Args length:	52/32768 chars
+Exit code:	0
