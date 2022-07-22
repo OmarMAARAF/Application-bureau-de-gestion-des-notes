@@ -6,3 +6,17 @@
        Dans ce cadre notre équipe a eu l’idée de créer une application bureau de gestion des notes des étudiants, nommée « Najah » programmée en JavaFX et reliée à une base de données MySQL. 
        </p>
 <h3>Screen shot</h3>
+<img src="./screenshot/p0.png" alt=""/>
+<br>
+<img src="./screenshot/p1.png" alt=""/>
+<br>
+<img src="./screenshot/p2.png" alt=""/>
+<br>
+<img src="./screenshot/p3.png" alt=""/>
+<br>
+<img src="./screenshot/p31.png" alt=""/>
+<br>
+<img src="./screenshot/p4.png" alt=""/>
+<br>
+<img src="./screenshot/p5.png" alt=""/>
+<br>
